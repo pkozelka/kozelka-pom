@@ -4,18 +4,16 @@
     <prerequisites>
         <maven>2.2.1</maven>
     </prerequisites>
-    <groupId>net.sf.buildbox.maven</groupId>
-    <artifactId>buildbox-pom</artifactId>
-    <version>1.0.5</version>
+    <groupId>net.kozelka.maven</groupId>
+    <artifactId>kozelka-pom</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>buildbox-pom:1.0.5</name>
-    <url>http://buildbox.sourceforge.net</url>
-    <description>BuildBox is set of tools and plugins based on Maven 2, helping java developers with various build types and with the build process itself.</description>
+    <url>http://petr.kozelka.net</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <distributionManagement>
-        <downloadUrl>http://buildbox.sourceforge.net/maven2/net/sf/buildbox</downloadUrl>
+        <downloadUrl>TODO</downloadUrl>
         <repository>
             <id>releasator.repo</id>
             <name>released artifacts</name>
@@ -23,14 +21,14 @@
         </repository>
         <site>
             <id>releasator.site</id>
-            <url>sftp://web.sourceforge.net/home/groups/b/bu/buildbox/htdocs/site/${project.artifactId}</url>
+            <url>TODO</url>
         </site>
     </distributionManagement>
     <developers>
         <developer>
             <name>Petr Kozelka</name>
             <email>pkozelka@gmail.com</email>
-            <url>http://kozelka.net</url>
+            <url>http://petr.kozelka.net</url>
         </developer>
     </developers>
     <licenses>
@@ -45,24 +43,11 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-    <mailingLists>
-        <mailingList>
-            <archive>http://groups.google.com/group/buildbox</archive>
-            <name>buildbox</name>
-            <post>buildbox@googlegroups.com</post>
-            <subscribe>http://groups.google.com/group/buildbox</subscribe>
-            <unsubscribe>buildbox+unsubscribe@googlegroups.com</unsubscribe>
-        </mailingList>
-    </mailingLists>
-    <issueManagement>
-        <system>sourceforge</system>
-        <url>https://sourceforge.net/tracker/?group_id=198902</url>
-    </issueManagement>
     <organization>
-        <name>Buildbox</name>
-        <url>http://buildbox.sourceforge.net</url>
+        <name>Petr Kozelka</name>
+        <url>http://petr.kozelka.net</url>
     </organization>
-    <inceptionYear>2007</inceptionYear>
+    <inceptionYear>2015</inceptionYear>
     <!-- Some defaults. We are not going to bother with java below 1.5, and with encodings other than UTF-8. -->
     <build>
         <pluginManagement>
@@ -205,8 +190,7 @@
     </build>
     <profiles>
         <profile>
-            <!-- stolen from Maven3 super POM: http://svn.apache.org/repos/asf/maven/maven-3/trunk/maven-model-builder/src/main/resources/org/apache/maven/model/pom-4.0.0.xml -->
-            <id>release-profile</id>
+            <id>release</id>
             <activation>
                 <property>
                     <name>performRelease</name>
@@ -254,9 +238,4 @@
             </build>
         </profile>
     </profiles>
-    <scm>
-        <connection>scm:svn:https://buildbox.svn.sourceforge.net/svnroot/buildbox/tags/net.sf.buildbox.maven-buildbox-pom-1.0.5</connection>
-        <developerConnection>scm:svn:https://buildbox.svn.sourceforge.net/svnroot/buildbox/tags/net.sf.buildbox.maven-buildbox-pom-1.0.5</developerConnection>
-        <url>https://buildbox.svn.sourceforge.net/svnroot/buildbox/tags/net.sf.buildbox.maven-buildbox-pom-1.0.5</url>
-    </scm>
 </project>
