@@ -8,6 +8,8 @@
     <artifactId>kozelka-pom</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <name>${project.artifactId}</name>
+    <description>Top-level POM for all my projects</description>
     <url>http://petr.kozelka.net</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -312,4 +314,9 @@
             </build>
         </profile>
     </profiles>
+    <scm>
+        <connection>scm:git:http://github.com/pkozelka/kozelka-pom.git</connection>
+        <developerConnection>scm:git:git@github.com:pkozelka/kozelka-pom.git</developerConnection>
+        <url>https://github.com/pkozelka/kozelka-pom</url>
+    </scm>
 </project>
