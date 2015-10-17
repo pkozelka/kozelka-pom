@@ -6,7 +6,7 @@
     </prerequisites>
     <groupId>net.kozelka.maven</groupId>
     <artifactId>kozelka-pom</artifactId>
-    <version>1.0.0</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <description>Top-level POM for all my projects</description>
