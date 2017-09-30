@@ -20,10 +20,7 @@
             <name>released artifacts</name>
             <url>${releasator.repo.url}</url>
         </repository>
-        <site>
-            <id>releasator.site</id>
-            <url>${releasator.siterepo.url}</url>
-        </site>
+        <!-- keep 'site' part on defaults -->
     </distributionManagement>
     <developers>
         <developer>
