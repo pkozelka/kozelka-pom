@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.kozelka.maven</groupId>
     <artifactId>kozelka-pom</artifactId>
@@ -7,14 +7,14 @@
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <description>Top-level POM for all my projects</description>
-    <url>http://petr.kozelka.net</url>
+    <url>https://petr.kozelka.net</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
     <distributionManagement>
-        <downloadUrl>http://central.maven.org/maven2</downloadUrl>
+        <downloadUrl>https://central.maven.org/maven2</downloadUrl>
         <repository>
             <id>releasator.repo</id>
             <name>released artifacts</name>
@@ -26,24 +26,24 @@
         <developer>
             <name>Petr Kozelka</name>
             <email>pkozelka@gmail.com</email>
-            <url>http://petr.kozelka.net</url>
+            <url>https://petr.kozelka.net</url>
         </developer>
     </developers>
     <licenses>
         <license>
             <name>Apache License 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
             <distribution>repo</distribution>
         </license>
         <license>
             <name>LGPL</name>
-            <url>http://www.gnu.org/licenses/lgpl-3.0.txt</url>
+            <url>https://www.gnu.org/licenses/lgpl-3.0.txt</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
     <organization>
         <name>Petr Kozelka</name>
-        <url>http://petr.kozelka.net</url>
+        <url>https://petr.kozelka.net</url>
     </organization>
     <inceptionYear>2015</inceptionYear>
     <!-- Some defaults. We are not going to bother with java below 1.5, and with encodings other than UTF-8. -->
@@ -57,8 +57,8 @@
                     <version>3.6.2</version>
                     <configuration>
                         <compilerVersion>${maven.compiler.source}</compilerVersion>
-                        <!-- Must be set explicitly due to http://jira.codehaus.org/browse/MJAVADOC-310 -->
-                        <!-- Must be set explicitly due to http://jira.codehaus.org/browse/MPIR-263 -->
+                        <!-- Must be set explicitly due to https://jira.codehaus.org/browse/MJAVADOC-310 -->
+                        <!-- Must be set explicitly due to https://jira.codehaus.org/browse/MPIR-263 -->
                         <source>${maven.compiler.source}</source>
                         <target>${maven.compiler.target}</target>
                         <encoding>UTF-8</encoding>
@@ -139,7 +139,7 @@
                             </manifest>
                             <manifestEntries>
                                 <Specification-Title>${project.artifactId}</Specification-Title>
-                                <!-- Must be manually added due to http://jira.codehaus.org/browse/MSHARED-270 -->
+                                <!-- Must be manually added due to https://jira.codehaus.org/browse/MSHARED-270 -->
                                 <Implementation-URL>${project.url}</Implementation-URL>
                             </manifestEntries>
                         </archive>
@@ -165,7 +165,7 @@
                             </manifest>
                             <manifestEntries>
                                 <Specification-Title>${project.artifactId}</Specification-Title>
-                                <!-- Must be manually added due to http://jira.codehaus.org/browse/MSHARED-270 -->
+                                <!-- Must be manually added due to https://jira.codehaus.org/browse/MSHARED-270 -->
                                 <Implementation-URL>${project.url}</Implementation-URL>
                             </manifestEntries>
                         </archive>
@@ -309,7 +309,7 @@
         </profile>
     </profiles>
     <scm>
-        <connection>scm:git:http://github.com/pkozelka/kozelka-pom.git</connection>
+        <connection>scm:git:https://github.com/pkozelka/kozelka-pom.git</connection>
         <developerConnection>scm:git:git@github.com:pkozelka/kozelka-pom.git</developerConnection>
         <url>https://github.com/pkozelka/kozelka-pom</url>
     </scm>
