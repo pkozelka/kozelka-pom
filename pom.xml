@@ -7,7 +7,7 @@
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <description>Top-level POM for all my projects</description>
-    <url>https://petr.kozelka.net</url>
+    <url>https://code.kozelka.net</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -26,7 +26,7 @@
         <developer>
             <name>Petr Kozelka</name>
             <email>pkozelka@gmail.com</email>
-            <url>https://petr.kozelka.net</url>
+            <url>https://code.kozelka.net</url>
         </developer>
     </developers>
     <licenses>
@@ -43,7 +43,7 @@
     </licenses>
     <organization>
         <name>Petr Kozelka</name>
-        <url>https://petr.kozelka.net</url>
+        <url>https://code.kozelka.net</url>
     </organization>
     <inceptionYear>2015</inceptionYear>
     <!-- Some defaults. We are not going to bother with java below 1.5, and with encodings other than UTF-8. -->
